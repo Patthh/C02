@@ -25,7 +25,6 @@ int main()
 	{
 		std::cout << RED << "Member No :" << i+1 << RES << std::endl;
 		horde[i].announce();
-		horde[i].~Zombie()
 	}
 	//used to deallocate memory that was allocated with new[]
 	delete[] horde;

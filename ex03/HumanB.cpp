@@ -6,7 +6,7 @@
 /*   By: pracksaw <pracksaw@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/26 00:28:05 by pracksaw          #+#    #+#             */
-/*   Updated: 2025/04/26 01:19:41 by pracksaw         ###   ########.fr       */
+/*   Updated: 2025/05/01 12:51:26 by pracksaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ HumanB::~HumanB()
 	std::cout << this->_name << " ceased to exist. 💀" << std::endl;
 }
 
-void HumanB::setWeapon(Weapon &weapon)
+void HumanB::setWeapon(Weapon *weapon)
 {
-    _weapon = &weapon;
+    _weapon = weapon;
 }
 
 void HumanB::attack(void)

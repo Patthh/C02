@@ -6,7 +6,7 @@
 /*   By: pracksaw <pracksaw@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/26 00:28:13 by pracksaw          #+#    #+#             */
-/*   Updated: 2025/04/26 01:06:42 by pracksaw         ###   ########.fr       */
+/*   Updated: 2025/05/01 12:51:15 by pracksaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,5 @@ class HumanB
 		//automatically called when an object of a class is destroy
 		~HumanB();
 		void	attack(void);
-		void	setWeapon(Weapon &weapon);
+		void	setWeapon(Weapon *weapon);
 };
