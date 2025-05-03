@@ -17,12 +17,12 @@
 ## VARIABLES 🧩
 CXX                     =       c++
 CXXFLAGS                =       -Wall -Wextra -Werror -std=c++98
-NAME                    =       zomb
+NAME                    =       number
 
 #==============================================================================#
 ## FILES 📄
-SRC_FILES               =       Zombie.cpp main.cpp newZombie.cpp randomChump.cpp
-HDR_FILES               =       Zombie.hpp 
+SRC_FILES               =       *.cpp
+HDR_FILES               =        
 OBJ_FILES               =       $(SRC_FILES:.cpp=.o)
 
 #==============================================================================#
