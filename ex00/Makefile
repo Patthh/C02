@@ -6,7 +6,7 @@
 #    By: pracksaw <pracksaw@student.42bangkok.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/21 18:16:33 by pracksaw          #+#    #+#              #
-#    Updated: 2025/05/03 19:08:27 by pracksaw         ###   ########.fr        #
+#    Updated: 2025/05/03 19:44:05 by pracksaw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ NAME                    =       number
 
 #==============================================================================#
 ## FILES 📄
-SRC_FILES               =       *.cpp  #Fixed.cpp
+SRC_FILES               =       main.cpp  Fixed.cpp
 HDR_FILES               =       Fixed.hpp
 OBJ_FILES               =       $(SRC_FILES:.cpp=.o)
 
