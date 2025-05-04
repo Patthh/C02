@@ -6,7 +6,7 @@
 /*   By: pracksaw <pracksaw@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 18:45:30 by pracksaw          #+#    #+#             */
-/*   Updated: 2025/05/03 19:33:05 by pracksaw         ###   ########.fr       */
+/*   Updated: 2025/05/04 17:22:47 by pracksaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int main( void )
 	return 0;
 }
 
-/* OUTPUT
+/* IDEAL OUTPUT
 $> ./a.out
 Default constructor called
 Copy constructor called

@@ -6,7 +6,7 @@
 #    By: pracksaw <pracksaw@student.42bangkok.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/21 18:16:33 by pracksaw          #+#    #+#              #
-#    Updated: 2025/04/26 01:10:05 by pracksaw         ###   ########.fr        #
+#    Updated: 2025/05/03 19:44:05 by pracksaw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,12 +17,12 @@
 ## VARIABLES 🧩
 CXX                     =       c++
 CXXFLAGS                =       -Wall -Wextra -Werror -std=c++98
-NAME                    =       zombshorde
+NAME                    =       number
 
 #==============================================================================#
 ## FILES 📄
-SRC_FILES               =       Zombie.cpp main.cpp
-HDR_FILES               =       Zombie.hpp 
+SRC_FILES               =       main.cpp  Fixed.cpp
+HDR_FILES               =       Fixed.hpp
 OBJ_FILES               =       $(SRC_FILES:.cpp=.o)
 
 #==============================================================================#

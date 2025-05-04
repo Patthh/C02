@@ -6,7 +6,7 @@
 /*   By: pracksaw <pracksaw@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 19:08:38 by pracksaw          #+#    #+#             */
-/*   Updated: 2025/05/03 19:45:37 by pracksaw         ###   ########.fr       */
+/*   Updated: 2025/05/04 15:26:44 by pracksaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,8 @@ Fixed::~Fixed()
 }
 
 // Returns the raw fixed-point value
-int Fixed::getRawBits() const {
+int Fixed::getRawBits() const
+{
 	std::cout << "getRawBits member function called" << std::endl;
     return _rawValue;
 }

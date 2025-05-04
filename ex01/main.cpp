@@ -6,29 +6,55 @@
 /*   By: pracksaw <pracksaw@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 18:45:30 by pracksaw          #+#    #+#             */
-/*   Updated: 2025/04/29 11:08:15 by pracksaw         ###   ########.fr       */
+/*   Updated: 2025/05/04 17:28:28 by pracksaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "Fixed.hpp"
 
-int main() 
+int main( void )
 {
-	Zombie* horde;
-	int zombieAmount = 10;
-	int i;
+	Fixed a;
+	Fixed const b( 10 );
+	Fixed const c( 42.42f );
+	Fixed const d( b );
+	
+	a = Fixed( 1234.4321f );
+	
+	std::cout << "a is " << a << std::endl;
+	std::cout << "b is " << b << std::endl;
+	std::cout << "c is " << c << std::endl;
+	std::cout << "d is " << d << std::endl;
 
-	horde = zombieHorde(zombieAmount, "Horde Member");
-	if (horde == 0)
-		return (EXIT_FAILURE);
-	for (i = 0; i < zombieAmount; ++i)
-	{
-		std::cout << RED << "Member No :" << i+1 << RES << std::endl;
-		horde[i].announce();
-	}
-	//used to deallocate memory that was allocated with new[]
-	delete[] horde;
+	std::cout << "a is " << a.toInt() << " as integer" << std::endl;
+	std::cout << "b is " << b.toInt() << " as integer" << std::endl;
+	std::cout << "c is " << c.toInt() << " as integer" << std::endl;
+	std::cout << "d is " << d.toInt() << " as integer" << std::endl;
 
-	horde = zombieHorde(0, "Failed");
 	return (0);
 }
+
+/* IDEAL OUTPUT
+$> ./a.out
+Default constructor called
+Int constructor called
+Float constructor called
+Copy constructor called
+Copy assignment operator called
+Float constructor called
+Copy assignment operator called
+Destructor called
+a is 1234.43
+b is 10
+c is 42.4219
+d is 10
+a is 1234 as integer
+b is 10 as integer
+c is 42 as integer
+d is 10 as integer
+Destructor called
+Destructor called
+Destructor called
+Destructor called
+$>
+*/

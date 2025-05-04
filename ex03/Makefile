@@ -6,7 +6,7 @@
 #    By: pracksaw <pracksaw@student.42bangkok.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/21 18:16:33 by pracksaw          #+#    #+#              #
-#    Updated: 2025/04/26 01:09:59 by pracksaw         ###   ########.fr        #
+#    Updated: 2025/05/03 19:44:05 by pracksaw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,12 +17,12 @@
 ## VARIABLES 🧩
 CXX                     =       c++
 CXXFLAGS                =       -Wall -Wextra -Werror -std=c++98
-NAME                    =       human
+NAME                    =       number
 
 #==============================================================================#
 ## FILES 📄
-SRC_FILES               =       HumanA.cpp HumanB.cpp Weapon.cpp main.cpp
-HDR_FILES               =       HumanA.hpp HumanB.hpp Weapon.hpp
+SRC_FILES               =       main.cpp  Fixed.cpp
+HDR_FILES               =       Fixed.hpp
 OBJ_FILES               =       $(SRC_FILES:.cpp=.o)
 
 #==============================================================================#
