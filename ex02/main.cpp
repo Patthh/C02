@@ -6,55 +6,91 @@
 /*   By: pracksaw <pracksaw@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 18:45:30 by pracksaw          #+#    #+#             */
-/*   Updated: 2025/05/04 17:28:28 by pracksaw         ###   ########.fr       */
+/*   Updated: 2025/05/05 19:05:16 by pracksaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
-int main( void )
-{
+int main( void ) {
 	Fixed a;
-	Fixed const b( 10 );
-	Fixed const c( 42.42f );
-	Fixed const d( b );
-	
-	a = Fixed( 1234.4321f );
-	
-	std::cout << "a is " << a << std::endl;
-	std::cout << "b is " << b << std::endl;
-	std::cout << "c is " << c << std::endl;
-	std::cout << "d is " << d << std::endl;
-
-	std::cout << "a is " << a.toInt() << " as integer" << std::endl;
-	std::cout << "b is " << b.toInt() << " as integer" << std::endl;
-	std::cout << "c is " << c.toInt() << " as integer" << std::endl;
-	std::cout << "d is " << d.toInt() << " as integer" << std::endl;
-
+	Fixed const b( Fixed( 5.05f ) * Fixed( 2 ) );
+	std::cout << a << std::endl;
+	std::cout << ++a << std::endl;
+	std::cout << a << std::endl;
+	std::cout << a++ << std::endl;
+	std::cout << a << std::endl;
+	std::cout << b << std::endl;
+	std::cout << Fixed::max( a, b ) << std::endl;
 	return (0);
 }
+/*
+int main(void) {
+    std::cout << "===== CONSTRUCTORS =====" << std::endl;
+    Fixed a;                 // Default constructor
+    Fixed b(123);            // Int constructor
+    Fixed c(456.789f);       // Float constructor
+    Fixed d(b);              // Copy constructor
+    Fixed e;
+    e = c;                   // Assignment operator
 
-/* IDEAL OUTPUT
-$> ./a.out
-Default constructor called
-Int constructor called
-Float constructor called
-Copy constructor called
-Copy assignment operator called
-Float constructor called
-Copy assignment operator called
-Destructor called
-a is 1234.43
-b is 10
-c is 42.4219
-d is 10
-a is 1234 as integer
-b is 10 as integer
-c is 42 as integer
-d is 10 as integer
-Destructor called
-Destructor called
-Destructor called
-Destructor called
-$>
+    std::cout << "\n===== BASIC VALUES =====" << std::endl;
+    std::cout << "a: " << a << std::endl;
+    std::cout << "b: " << b << std::endl;
+    std::cout << "c: " << c << std::endl;
+    std::cout << "d: " << d << std::endl;
+    std::cout << "e: " << e << std::endl;
+
+    std::cout << "\n===== COMPARISON OPERATORS =====" << std::endl;
+    std::cout << "b > c: " << (b > c) << std::endl;
+    std::cout << "b < c: " << (b < c) << std::endl;
+    std::cout << "b >= d: " << (b >= d) << std::endl;
+    std::cout << "b <= d: " << (b <= d) << std::endl;
+    std::cout << "b == d: " << (b == d) << std::endl;
+    std::cout << "c != e: " << (c != e) << std::endl;
+
+    std::cout << "\n===== ARITHMETIC OPERATORS =====" << std::endl;
+    Fixed f = b + c;
+    std::cout << "b + c = " << f << std::endl;
+    Fixed g = c - b;
+    std::cout << "c - b = " << g << std::endl;
+    Fixed h = b * c;
+    std::cout << "b * c = " << h << std::endl;
+    Fixed i = c / b;
+    std::cout << "c / b = " << i << std::endl;
+
+    std::cout << "\n===== INCREMENT/DECREMENT OPERATORS =====" << std::endl;
+    Fixed j;
+    std::cout << "j: " << j << std::endl;
+    std::cout << "++j: " << ++j << std::endl;
+    std::cout << "j: " << j << std::endl;
+    std::cout << "j++: " << j++ << std::endl;
+    std::cout << "j: " << j << std::endl;
+    std::cout << "--j: " << --j << std::endl;
+    std::cout << "j: " << j << std::endl;
+    std::cout << "j--: " << j-- << std::endl;
+    std::cout << "j: " << j << std::endl;
+
+    std::cout << "\n===== MIN/MAX FUNCTIONS =====" << std::endl;
+    std::cout << "min(b, c): " << Fixed::min(b, c) << std::endl;
+    const Fixed const_b(b);
+    const Fixed const_c(c);
+    std::cout << "min(const_b, const_c): " << Fixed::min(const_b, const_c) << std::endl;
+    std::cout << "max(b, c): " << Fixed::max(b, c) << std::endl;
+    std::cout << "max(const_b, const_c): " << Fixed::max(const_b, const_c) << std::endl;
+
+    std::cout << "\n===== REQUIRED TEST =====" << std::endl;
+    Fixed x;
+    Fixed const y(Fixed(5.05f) * Fixed(2));
+    
+    std::cout << x << std::endl;
+    std::cout << ++x << std::endl;
+    std::cout << x << std::endl;
+    std::cout << x++ << std::endl;
+    std::cout << x << std::endl;
+    std::cout << y << std::endl;
+    std::cout << Fixed::max(x, y) << std::endl;
+
+    return 0;
+}
 */
