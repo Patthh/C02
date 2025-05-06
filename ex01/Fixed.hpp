@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pracksaw <pracksaw@student.42bangkok.co    +#+  +:+       +#+        */
+/*   By: pracksaw <pracksaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 19:08:36 by pracksaw          #+#    #+#             */
-/*   Updated: 2025/05/04 17:26:15 by pracksaw         ###   ########.fr       */
+/*   Updated: 2025/05/06 13:07:26 by pracksaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,6 @@ public:
 };
 
 // Overload << to output the fixed-point number as a float
-std::ostream& operator<<(std::ostream& os, const Fixed& obj);
+std::ostream &operator<<(std::ostream &os, const Fixed &obj);
 
 #endif

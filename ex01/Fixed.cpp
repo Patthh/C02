@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pracksaw <pracksaw@student.42bangkok.co    +#+  +:+       +#+        */
+/*   By: pracksaw <pracksaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 19:08:38 by pracksaw          #+#    #+#             */
-/*   Updated: 2025/05/04 17:20:51 by pracksaw         ###   ########.fr       */
+/*   Updated: 2025/05/06 13:07:14 by pracksaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ Fixed::Fixed(const float value) : _rawValue(roundf(value * (1 << _fractionalBits
 }
 
 // Copy assignment operator
-Fixed& Fixed::operator=(const Fixed &other) {
+Fixed &Fixed::operator=(const Fixed &other) {
     std::cout << "Copy assignment operator called" << std::endl;
     if (this != &other)
         _rawValue = other._rawValue;
@@ -67,7 +67,7 @@ int Fixed::toInt() const {
 }
 
 // Overload << operator to output the float representation
-std::ostream& operator<<(std::ostream& os, const Fixed& obj) {
+std::ostream &operator<<(std::ostream &os, const Fixed &obj) {
     os << obj.toFloat();
     return os;
 }

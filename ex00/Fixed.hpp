@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pracksaw <pracksaw@student.42bangkok.co    +#+  +:+       +#+        */
+/*   By: pracksaw <pracksaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 19:08:36 by pracksaw          #+#    #+#             */
-/*   Updated: 2025/05/03 19:42:19 by pracksaw         ###   ########.fr       */
+/*   Updated: 2025/05/06 13:06:34 by pracksaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ private:
 public:
     Fixed();                               // Default constructor
     Fixed(const Fixed &other);             // Copy constructor
-    Fixed& operator=(const Fixed &other);  // Copy assignment operator
+    Fixed &operator=(const Fixed &other);  // Copy assignment operator
     ~Fixed();                              // Destructor
 
     int     getRawBits() const;            // Returns raw fixed-point value

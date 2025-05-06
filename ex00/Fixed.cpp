@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pracksaw <pracksaw@student.42bangkok.co    +#+  +:+       +#+        */
+/*   By: pracksaw <pracksaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 19:08:38 by pracksaw          #+#    #+#             */
-/*   Updated: 2025/05/04 15:26:44 by pracksaw         ###   ########.fr       */
+/*   Updated: 2025/05/06 13:06:47 by pracksaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ Fixed::Fixed(const Fixed &other) : _rawValue(other._rawValue)
 }
 
 // Copy assignment operator: avoids self-assignment, copies raw value
-Fixed& Fixed::operator=(const Fixed &other) {
+Fixed &Fixed::operator=(const Fixed &other) {
 	std::cout << "Copy assignment operator called" << std::endl;
     if (this != &other)
         _rawValue = other._rawValue;

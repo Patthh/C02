@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pracksaw <pracksaw@student.42bangkok.co    +#+  +:+       +#+         #
+#    By: pracksaw <pracksaw@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/21 18:16:33 by pracksaw          #+#    #+#              #
-#    Updated: 2025/05/03 19:44:05 by pracksaw         ###   ########.fr        #
+#    Updated: 2025/05/06 13:07:35 by pracksaw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@
 ## VARIABLES 🧩
 CXX                     =       c++
 CXXFLAGS                =       -Wall -Wextra -Werror -std=c++98
-NAME                    =       number
+NAME                    =       float
 
 #==============================================================================#
 ## FILES 📄

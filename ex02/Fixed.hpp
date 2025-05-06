@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pracksaw <pracksaw@student.42bangkok.co    +#+  +:+       +#+        */
+/*   By: pracksaw <pracksaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 19:08:36 by pracksaw          #+#    #+#             */
-/*   Updated: 2025/05/05 19:03:24 by pracksaw         ###   ########.fr       */
+/*   Updated: 2025/05/06 13:05:39 by pracksaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,13 +56,13 @@ public:
 	Fixed operator--(int);    // Post-decrement
 
 	// Static member functions
-	static Fixed& min(Fixed &a, Fixed &b);
+	static Fixed &min(Fixed &a, Fixed &b);
 	static const Fixed& min(const Fixed &a, const Fixed &b);
-	static Fixed& max(Fixed &a, Fixed &b);
+	static Fixed &max(Fixed &a, Fixed &b);
 	static const Fixed& max(const Fixed &a, const Fixed &b);
 };
 
 // Overload << to output the fixed-point number as a float
-std::ostream& operator<<(std::ostream& os, const Fixed& obj);
+std::ostream &operator<<(std::ostream &os, const Fixed &obj);
 
 #endif
