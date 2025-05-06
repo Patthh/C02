@@ -6,7 +6,7 @@
 #    By: pracksaw <pracksaw@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/21 18:16:33 by pracksaw          #+#    #+#              #
-#    Updated: 2025/05/06 13:07:35 by pracksaw         ###   ########.fr        #
+#    Updated: 2025/05/06 16:15:28 by pracksaw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,12 +43,12 @@ NC                      =       \033[0m
 #==============================================================================#
 ## RULES 🔨
 all:                            $(NAME)
-				@printf "$(GREEN)🎉 PhoneBook has been successfully compiled! 🎉$(NC)\n"
+				@printf "$(GREEN)🎉 $(NAME) has been successfully compiled! 🎉$(NC)\n"
 
 $(NAME):                        $(OBJ_FILES)
 				@printf "$(YELLOW)🔗 Linking objects into executable...$(NC)\n"
 				@$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJ_FILES)
-				@printf "$(GREEN)✅ Executable $(NAME) created! 📞$(NC)\n"
+				@printf "$(GREEN)✅ Executable $(NAME) created! $(NC)\n"
 
 %.o: %.cpp
 				@$(eval COMPILED_FILES=$(shell echo $$(($(COMPILED_FILES) + 1))))
