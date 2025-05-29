@@ -3,15 +3,15 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pracksaw <pracksaw@student.42.fr>          +#+  +:+       +#+         #
+#    By: pracksaw <pracksaw@student.42bangkok.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/21 18:16:33 by pracksaw          #+#    #+#              #
-#    Updated: 2025/05/06 16:16:28 by pracksaw         ###   ########.fr        #
+#    Updated: 2025/05/30 03:04:22 by pracksaw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #==============================================================================#
-## PHONEBOOK MAKEFILE 📞 
+## MAKEFILE
 #==============================================================================#
 
 ## VARIABLES 🧩
@@ -50,7 +50,7 @@ $(NAME):                        $(OBJ_FILES)
 				@$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJ_FILES)
 				@printf "$(GREEN)✅ Executable $(NAME) created!$(NC)\n"
 
-%.o: %.cpp
+%.o: %.cpp $(HDR_FILES)
 				@$(eval COMPILED_FILES=$(shell echo $$(($(COMPILED_FILES) + 1))))
 				@printf "\r$(CYAN)🔄 Compiling: $< $(COMPILED_FILES)/$(TOTAL_FILES)$(NC) 🟡"
 				@$(CXX) $(CXXFLAGS) -c $< -o $@
